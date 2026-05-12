@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cheap SEO Services in the UK: What You're Really Paying For</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@300;400;500&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d0d;
+    --surface: #141414;
+    --surface2: #1c1c1c;
+    --border: #2a2a2a;
+    --border-bright: #3d3d3d;
+    --text: #e8e4dc;
+    --text-dim: #7a7570;
+    --text-muted: #4a4642;
+    --accent: #e8c547;
+    --accent2: #4caf82;
+    --accent3: #e85d47;
+    --display: 'Bebas Neue', sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+    --body: 'Source Serif 4', Georgia, serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--body);
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
+
+  /* ── SCANLINE OVERLAY ── */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.08) 2px,
+      rgba(0,0,0,0.08) 4px
+    );
+    pointer-events: none;
+    z-index: 9998;
+  }
+
+  /* ── TOP BAR ── */
+  .topbar {
+    background: var(--accent);
+    padding: 8px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .topbar-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topbar-brand {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    color: #0d0d0d;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .topbar-date {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: rgba(13,13,13,0.6);
+    letter-spacing: 0.12em;
+  }
+
+  /* ── LAYOUT ── */
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    padding: 70px 0 0;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: 'SEO';
+    position: absolute;
+    right: -20px;
+    top: 20px;
+    font-family: var(--display);
+    font-size: 220px;
+    color: var(--surface2);
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+    letter-spacing: -0.05em;
+  }
+
+  .badge-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border: 1px solid var(--border-bright);
+    color: var(--text-dim);
+  }
+  .badge.hot {
+    background: var(--accent3);
+    border-color: var(--accent3);
+    color: #fff;
+  }
+
+  .hero h1 {
+    font-family: var(--display);
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    line-height: 0.92;
+    letter-spacing: 0.02em;
+    color: var(--text);
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+  }
+  .hero h1 .highlight {
+    color: var(--accent);
+    display: block;
+  }
+
+  .hero-sub {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    letter-spacing: 0.08em;
+    margin-bottom: 32px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-intro {
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    padding: 24px 28px;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #ccc8c0;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── CONTENT AREA ── */
+  .content {
+    padding: 60px 0;
+  }
+
+  /* ── SECTION MARKER ── */
+  .section-marker {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin: 64px 0 32px;
+  }
+  .section-num {
+    font-family: var(--display);
+    font-size: 4rem;
+    color: var(--accent);
+    line-height: 1;
+    margin-right: 16px;
+    opacity: 0.7;
+  }
+  .section-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border-bright);
+  }
+  .section-tag {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-left: 14px;
+  }
+
+  /* ── HEADINGS ── */
+  .content h2 {
+    font-family: var(--display);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    letter-spacing: 0.04em;
+    color: var(--text);
+    margin-bottom: 20px;
+    line-height: 1.05;
+  }
+
+  .content h3 {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent2);
+    margin: 36px 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .content h3::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ── PROSE ── */
+  .content p {
+    margin-bottom: 22px;
+    color: #ccc8be;
+  }
+
+  /* ── INLINE LINK ── */
+  .content a,
+  a.kw-link {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(232,197,71,0.4);
+    transition: border-color 0.2s, background 0.2s, color 0.2s;
+    padding: 0 2px;
+  }
+  .content a:hover,
+  a.kw-link:hover {
+    background: var(--accent);
+    color: #0d0d0d;
+    border-bottom-color: transparent;
+  }
+
+  /* ── WARNING BOX ── */
+  .warning-box {
+    border: 1px solid var(--accent3);
+    background: rgba(232,93,71,0.07);
+    padding: 24px 28px;
+    margin: 36px 0;
+    position: relative;
+  }
+  .warning-box::before {
+    content: '⚠ WARNING';
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.25em;
+    color: var(--accent3);
+    display: block;
+    margin-bottom: 12px;
+  }
+  .warning-box p {
+    font-size: 15px;
+    color: #d0ccc4;
+    margin: 0;
+  }
+
+  /* ── TERMINAL CHECKLIST ── */
+  .terminal {
+    background: #0a0a0a;
+    border: 1px solid var(--border-bright);
+    margin: 36px 0;
+    overflow: hidden;
+  }
+  .terminal-bar {
+    background: var(--surface2);
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .t-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+  }
+  .t-dot.r { background: #e85d47; }
+  .t-dot.y { background: #e8c547; }
+  .t-dot.g { background: #4caf82; }
+  .terminal-title {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    margin-left: 6px;
+  }
+  .terminal-body {
+    padding: 24px 28px;
+  }
+  .t-line {
+    font-family: var(--mono);
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .t-line:last-child { margin-bottom: 0; }
+  .t-prompt { color: var(--accent2); flex-shrink: 0; }
+  .t-cmd { color: var(--accent); flex-shrink: 0; }
+  .t-desc { color: var(--text-dim); }
+
+  /* ── STAT CARDS ── */
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin: 36px 0;
+    background: var(--border);
+  }
+  .stat-card {
+    background: var(--surface);
+    padding: 28px 22px;
+    text-align: center;
+  }
+  .stat-num {
+    font-family: var(--display);
+    font-size: 3rem;
+    color: var(--accent);
+    line-height: 1;
+    letter-spacing: 0.04em;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .stat-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+
+  /* ── COMPARISON TABLE ── */
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 32px 0;
+    font-size: 14px;
+  }
+  .compare-table th {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-bright);
+    background: var(--surface2);
+  }
+  .compare-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    color: #c0bcb4;
+    vertical-align: top;
+  }
+  .compare-table tr:hover td { background: var(--surface); }
+  .compare-table .good { color: var(--accent2); font-weight: 400; }
+  .compare-table .bad  { color: var(--accent3); font-weight: 400; }
+  .compare-table .label-col {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text);
+  }
+
+  /* ── PULL STAT ── */
+  .pull-stat {
+    margin: 48px -24px;
+    padding: 48px 24px;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .pull-stat-num {
+    font-family: var(--display);
+    font-size: 5rem;
+    color: #0d0d0d;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .pull-stat-text {
+    font-family: var(--body);
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    font-style: italic;
+    line-height: 1.5;
+    max-width: 480px;
+  }
+
+  /* ── TIPS LIST ── */
+  .tips-list {
+    list-style: none;
+    margin: 28px 0;
+    counter-reset: tips;
+  }
+  .tips-list li {
+    counter-increment: tips;
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: start;
+  }
+  .tips-list li:last-child { border-bottom: none; }
+  .tips-list li::before {
+    content: counter(tips, decimal-leading-zero);
+    font-family: var(--display);
+    font-size: 1.8rem;
+    color: var(--accent);
+    line-height: 1.2;
+  }
+  .tip-content strong {
+    display: block;
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text);
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  .tip-content p {
+    font-size: 14.5px;
+    color: var(--text-dim);
+    margin: 0;
+  }
+
+  /* ── FAQ ── */
+  .faq-section {
+    margin: 60px 0;
+    padding: 48px 0;
+    border-top: 1px solid var(--border-bright);
+    border-bottom: 1px solid var(--border-bright);
+  }
+  .faq-heading {
+    font-family: var(--display);
+    font-size: 2.4rem;
+    letter-spacing: 0.05em;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  .faq-sub {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 36px;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+  }
+  .faq-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .faq-q-text {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .faq-arrow {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--border-bright);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 14px;
+    color: var(--text-dim);
+    transition: all 0.3s;
+    font-family: var(--mono);
+    margin-top: 2px;
+  }
+  .faq-item.open .faq-arrow {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #0d0d0d;
+    transform: rotate(180deg);
+  }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  .faq-item.open .faq-answer { max-height: 260px; }
+  .faq-answer-inner {
+    padding: 4px 0 24px 0;
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--text-dim);
+    border-left: 2px solid var(--accent);
+    padding-left: 20px;
+    margin-left: 4px;
+  }
+
+  /* ── CLOSING ── */
+  .closing {
+    background: var(--surface);
+    border: 1px solid var(--border-bright);
+    padding: 48px;
+    margin: 48px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .closing::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2), var(--accent3));
+  }
+  .closing h2 {
+    font-family: var(--display);
+    font-size: 2rem;
+    letter-spacing: 0.04em;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
+  .closing p {
+    font-size: 15.5px;
+    line-height: 1.75;
+    color: var(--text-dim);
+    margin-bottom: 14px;
+  }
+  .closing p:last-child { margin-bottom: 0; }
+
+  /* ── FOOTER TAGS ── */
+  .post-footer {
+    padding: 28px 0 64px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .footer-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .tag {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border: 1px solid var(--border-bright);
+    color: var(--text-muted);
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .tag:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ── ANIMATION ── */
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .hero    { animation: slideIn 0.6s ease both; }
+  .content { animation: slideIn 0.6s 0.1s ease both; }
+
+  @media (max-width: 620px) {
+    .stat-row { grid-template-columns: 1fr; }
+    .pull-stat { margin: 40px -24px; }
+    .hero::before { font-size: 120px; opacity: 0.3; }
+    .closing { padding: 28px 24px; }
+    .compare-table { font-size: 12px; }
+    .compare-table th, .compare-table td { padding: 10px 10px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="topbar-brand">// UK Digital Marketing Review</span>
+    <span class="topbar-date">Guest Contributor · SEO Edition</span>
+  </div>
+</div>
+
+<div class="wrapper">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="badge-row">
+    <span class="badge hot">Must Read</span>
+    <span class="badge">SEO Strategy</span>
+    <span class="badge">UK Business</span>
+    <span class="badge">12 min read</span>
+  </div>
+  <h1>
+    Cheap SEO
+    <span class="highlight">Services UK:</span>
+    What You're Really Paying For
+  </h1>
+  <div class="hero-sub">
+    <span>// GUEST POST</span>
+    <span>// DIGITAL MARKETING</span>
+    <span>// SMALL BUSINESS GUIDE</span>
+  </div>
+  <div class="hero-intro">
+    The phrase "cheap SEO" sets off alarm bells for some and hope for others. The truth, as always, sits somewhere in the middle — but the gap between a bargain and a disaster is wider than most people realise.
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<p style="margin-top:48px;">Every week, thousands of UK business owners search for low-cost SEO solutions. Some find genuine value. Others end up paying twice — once for the bad service, and again to fix the damage it caused. This post is about helping you tell the difference before it costs you.</p>
+
+<p>Let's strip away the marketing language and talk about what's actually going on in the budget end of the UK SEO market.</p>
+
+<!-- SECTION 1 -->
+<div class="section-marker">
+  <span class="section-num">01</span>
+  <div class="section-line"></div>
+  <span class="section-tag">The Real Picture</span>
+</div>
+
+<h2>Why "Cheap" Is Relative in SEO</h2>
+
+<p>There's a reason experienced marketers wince at the word "cheap" in the context of search engine optimisation. It's not snobbery — it's pattern recognition. The SEO industry has a long history of providers who sell low and deliver less.</p>
+
+<p>But context matters enormously. A £500/month package from a lean, focused agency might deliver dramatically more than a £2,000/month retainer from a bloated firm where your account gets handed to a junior exec and forgotten. Price is not a reliable proxy for quality in either direction.</p>
+
+<p>What you're really asking when you say "cheap SEO" is this: <em>can I get measurable, sustainable results without draining my budget?</em> The answer is yes — but only if you know what separates value from rubbish.</p>
+
+<div class="stat-row">
+  <div class="stat-card">
+    <span class="stat-num">73%</span>
+    <span class="stat-label">of SMEs say SEO is their top organic channel</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-num">3–6</span>
+    <span class="stat-label">months for early ranking movement</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-num">£400+</span>
+    <span class="stat-label">realistic monthly budget for UK SMEs</span>
+  </div>
+</div>
+
+<!-- SECTION 2 -->
+<div class="section-marker">
+  <span class="section-num">02</span>
+  <div class="section-line"></div>
+  <span class="section-tag">The Danger Zone</span>
+</div>
+
+<h2>What Genuinely Bad SEO Looks Like</h2>
+
+<p>Before we talk about finding good affordable options, it's worth being specific about what you're trying to avoid. These aren't hypothetical risks — they're the most common outcomes when corners are cut.</p>
+
+<div class="warning-box">
+  <p>If an agency promises page-one rankings within weeks, guarantees a specific position in Google, or quotes you under £100/month for a "full SEO package" — those are not deals. Those are the beginning of a problem.</p>
+</div>
+
+<h3>The Most Common Low-Quality SEO Tactics</h3>
+
+<div class="terminal">
+  <div class="terminal-bar">
+    <div class="t-dot r"></div>
+    <div class="t-dot y"></div>
+    <div class="t-dot g"></div>
+    <span class="terminal-title">red-flag-tactics.log</span>
+  </div>
+  <div class="terminal-body">
+    <div class="t-line">
+      <span class="t-prompt">$</span>
+      <span class="t-cmd">LINK_SPAM</span>
+      <span class="t-desc">— Hundreds of low-quality backlinks from irrelevant sites. Looks impressive in a report. Google ignores or penalises most of them.</span>
+    </div>
+    <div class="t-line">
+      <span class="t-prompt">$</span>
+      <span class="t-cmd">KEYWORD_STUFFING</span>
+      <span class="t-desc">— Forcing the same phrase into content unnaturally. A signal of outdated or lazy practice. Hurts readability and rankings.</span>
+    </div>
+    <div class="t-line">
+      <span class="t-prompt">$</span>
+      <span class="t-cmd">DUPLICATE_CONTENT</span>
+      <span class="t-desc">— Recycled or spun articles across multiple sites. Google devalues it. Your audience notices immediately.</span>
+    </div>
+    <div class="t-line">
+      <span class="t-prompt">$</span>
+      <span class="t-cmd">FAKE_REPORTING</span>
+      <span class="t-desc">— Rankings for zero-volume keywords nobody searches. Looks like progress. Delivers none.</span>
+    </div>
+    <div class="t-line">
+      <span class="t-prompt">$</span>
+      <span class="t-cmd">PBN_LINKS</span>
+      <span class="t-desc">— Links from private blog networks designed to manipulate rankings. Violates Google guidelines. Can trigger manual penalties.</span>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 3 -->
+<div class="section-marker">
+  <span class="section-num">03</span>
+  <div class="section-line"></div>
+  <span class="section-tag">The Value Formula</span>
+</div>
+
+<h2>Cheap vs Affordable: Breaking Down the Difference</h2>
+
+<p>These two words get used interchangeably, but they describe fundamentally different things. Here's a side-by-side comparison so the distinction is clear:</p>
+
+<table class="compare-table">
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>Cheap SEO</th>
+      <th>Affordable SEO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="label-col">Pricing Driver</td>
+      <td class="bad">Race to the bottom</td>
+      <td class="good">Lean operations + focus</td>
+    </tr>
+    <tr>
+      <td class="label-col">Content Quality</td>
+      <td class="bad">Recycled, thin, AI-spun</td>
+      <td class="good">Original, researched, useful</td>
+    </tr>
+    <tr>
+      <td class="label-col">Link Building</td>
+      <td class="bad">Volume over quality</td>
+      <td class="good">Relevant, earned placements</td>
+    </tr>
+    <tr>
+      <td class="label-col">Reporting</td>
+      <td class="bad">Vanity metrics only</td>
+      <td class="good">Tied to real business goals</td>
+    </tr>
+    <tr>
+      <td class="label-col">Communication</td>
+      <td class="bad">Reactive or absent</td>
+      <td class="good">Proactive and transparent</td>
+    </tr>
+    <tr>
+      <td class="label-col">Long-term impact</td>
+      <td class="bad">Neutral at best, harmful at worst</td>
+      <td class="good">Compounding organic growth</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The goal isn't to spend as little as possible. The goal is to find a provider who delivers genuine results at a price that works for your current stage of business. For a more complete breakdown of how to identify trustworthy budget-friendly providers, this resource on <a class="kw-link" href="https://nextmark.uk/affordable-seo-services-uk" target="_blank" rel="noopener">cheap SEO services UK</a> businesses can actually rely on is worth reading before you commit to anyone.</p>
+
+<div class="pull-stat">
+  <span class="pull-stat-num">68%</span>
+  <span class="pull-stat-text">of online experiences begin with a search engine — making SEO one of the most direct investments a UK business can make in its own discoverability.</span>
+</div>
+
+<!-- SECTION 4 -->
+<div class="section-marker">
+  <span class="section-num">04</span>
+  <div class="section-line"></div>
+  <span class="section-tag">Actionable Advice</span>
+</div>
+
+<h2>Six Things to Do Before Hiring Any SEO Provider</h2>
+
+<p>Whether you're talking to a solo consultant or a 20-person agency, these steps will protect you from costly mistakes and help you find the right fit faster.</p>
+
+<ol class="tips-list">
+  <li>
+    <div class="tip-content">
+      <strong>Request a Site Audit First</strong>
+      <p>Any reputable provider will want to understand the current state of your site before proposing anything. If they skip straight to a pitch, that's a bad sign.</p>
+    </div>
+  </li>
+  <li>
+    <div class="tip-content">
+      <strong>Ask for Case Studies with Real Data</strong>
+      <p>Not client logos — actual numbers. Traffic growth, keyword movement over time, conversion improvements. If they can't share these, ask why.</p>
+    </div>
+  </li>
+  <li>
+    <div class="tip-content">
+      <strong>Check Their Own Website</strong>
+      <p>Does the agency rank for its own target keywords? Is their content useful and current? Their site is a live portfolio — use it.</p>
+    </div>
+  </li>
+  <li>
+    <div class="tip-content">
+      <strong>Understand What's in the Package</strong>
+      <p>Ask specifically: what deliverables will I receive each month? How many hours are allocated? Who will be working on my account? Get this in writing.</p>
+    </div>
+  </li>
+  <li>
+    <div class="tip-content">
+      <strong>Avoid Rigid Long-Term Contracts Early</strong>
+      <p>A 12-month lock-in before seeing any results is a red flag. Confident agencies offer shorter initial engagements — often 3 months — to prove their value first.</p>
+    </div>
+  </li>
+  <li>
+    <div class="tip-content">
+      <strong>Set Realistic Expectations on Both Sides</strong>
+      <p>Be honest about your budget, goals, and timeline. Agencies that push back on unrealistic expectations are usually the ones worth working with long-term.</p>
+    </div>
+  </li>
+</ol>
+
+<!-- SECTION 5 -->
+<div class="section-marker">
+  <span class="section-num">05</span>
+  <div class="section-line"></div>
+  <span class="section-tag">What to Expect</span>
+</div>
+
+<h2>What a Solid Budget SEO Package Should Include</h2>
+
+<h3>Technical Foundations</h3>
+<p>Site speed, Core Web Vitals, mobile usability, crawl error fixes, schema markup. This is non-negotiable. Without technical health, everything else is built on sand.</p>
+
+<h3>On-Page Optimisation</h3>
+<p>Title tags, meta descriptions, header structure, internal linking — reviewed and updated regularly, not just at the start. Your site grows; your optimisation should too.</p>
+
+<h3>Content That Earns Traffic</h3>
+<p>Blog posts, service page copy, and FAQs that address real questions your audience is actively searching for. Good content is still the most durable form of low-cost SEO available.</p>
+
+<h3>Link Building with Integrity</h3>
+<p>Earning links from relevant, reputable UK publications and directories. This is slow, relationship-driven work — and that's exactly why it holds its value over time.</p>
+
+<h3>Local SEO (Where Relevant)</h3>
+<p>Google Business Profile optimisation, local citations, location-specific landing pages. For businesses serving specific UK regions, local SEO often delivers the fastest and most measurable returns.</p>
+
+<h3>Transparent Monthly Reporting</h3>
+<p>Reports that tie activity to outcomes: organic traffic trends, ranking changes for target keywords, leads generated via organic channels. Not just impressions and clicks in a pretty PDF.</p>
+
+<!-- FAQ -->
+<div class="faq-section">
+  <div class="faq-heading">FAQ</div>
+  <div class="faq-sub">// Common questions answered honestly</div>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="toggleFaq(this)">
+      <span class="faq-q-text">Is it safe to use cheap SEO services in the UK?</span>
+      <span class="faq-arrow">▾</span>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">It depends entirely on what "cheap" means in practice. Low-cost providers using ethical, white-hat methods can be perfectly safe and effective. Providers cutting corners with spammy links or duplicate content can result in Google penalties that take months to recover from. The price tag alone tells you nothing — the tactics do.</div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="toggleFaq(this)">
+      <span class="faq-q-text">How much does decent SEO actually cost for a small UK business?</span>
+      <span class="faq-arrow">▾</span>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">A credible package for a small UK business typically starts at £400–£800 per month. Below that threshold, the scope becomes too narrow for meaningful progress. Above £2,000/month, you're in mid-market agency territory. Freelancers can sometimes offer comparable quality at lower cost for specific, well-defined projects.</div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="toggleFaq(this)">
+      <span class="faq-q-text">How long does it take for affordable SEO to show results?</span>
+      <span class="faq-arrow">▾</span>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">Realistically, 3–6 months for early movement, and 9–12 months for more substantial organic traffic growth in moderately competitive niches. Heavily contested industries may take longer. Anyone promising significant results in 30 days is almost certainly using methods that will cause problems later.</div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="toggleFaq(this)">
+      <span class="faq-q-text">Should I hire a local SEO agency or does location not matter?</span>
+      <span class="faq-arrow">▾</span>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">Location matters more than people assume. A regional UK agency often has a better grasp of local search behaviour, regional competition, and market nuance. That said, quality remote agencies can absolutely deliver results — the key is finding one with demonstrable experience in your sector, wherever they're based.</div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="toggleFaq(this)">
+      <span class="faq-q-text">What's the difference between cheap SEO and budget-friendly SEO?</span>
+      <span class="faq-arrow">▾</span>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">Cheap SEO prioritises price above everything else — usually at the cost of quality, strategy, and results. Budget-friendly SEO is a conscious choice to get the most strategic value from a constrained spend. The distinction is mindset: one is a race to the bottom; the other is smart resource allocation.</div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="toggleFaq(this)">
+      <span class="faq-q-text">Can I do any SEO myself to cut costs?</span>
+      <span class="faq-arrow">▾</span>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">Yes — and it's often a good idea. Publishing consistent, quality content, maintaining your Google Business Profile, and building relationships with other local businesses for natural link-building are all things you can manage in-house. Pair this with agency support on technical SEO and you've got a lean, effective hybrid approach.</div>
+    </div>
+  </div>
+
+</div><!-- /faq -->
+
+<!-- CLOSING -->
+<div class="closing">
+  <h2>THE BOTTOM LINE</h2>
+  <p>The market for low-cost SEO in the UK is not inherently dangerous — it just requires more scrutiny than the premium end. The best affordable providers are the ones who are transparent about their methods, realistic about timelines, and genuinely interested in your business outcomes rather than just your monthly payment.</p>
+  <p>Go in with clear expectations, the right questions, and a realistic budget. Demand specifics. Treat vague promises as disqualifiers. And remember: the goal of SEO isn't rankings — it's revenue. Any provider worth their fee understands that distinction.</p>
+  <p>Done well, search engine optimisation is one of the most durable investments a UK business can make. Done badly, it's an expensive distraction. The difference, more often than not, comes down to how carefully you choose your partner.</p>
+</div>
+
+<!-- POST FOOTER -->
+<div class="post-footer">
+  <span class="footer-label">Tags //</span>
+  <span class="tag">SEO</span>
+  <span class="tag">UK Marketing</span>
+  <span class="tag">Small Business</span>
+  <span class="tag">Budget SEO</span>
+  <span class="tag">Digital Strategy</span>
+  <span class="tag">Link Building</span>
+</div>
+
+</div><!-- /content -->
+</div><!-- /wrapper -->
+
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+</body>
+</html>
